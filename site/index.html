@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Test GeoLocation</title>
-
+    <link href="./css/site.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -28,7 +28,7 @@
         const mapsLink = document.getElementById('a-maps')
 
         divOutput.textContent = 'Your location is ' + latitude + ', ' + longitude
-        mapsLink.href = 'https://www.google.co.uk/maps/@' + latitude + "," + longitude
+        mapsLink.href = 'https://www.google.com/maps/search/?api=1&query=' + latitude + "," + longitude
     }
 
     function btnGoOnClick() {
