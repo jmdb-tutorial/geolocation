@@ -7,22 +7,24 @@
 </head>
 <body>
 
-<button id="btn-go" type="button" name="GO">GO</button>
+<div id="div-content">
+    <button id="btn-go" type="button" name="GO">GO</button>
 
-<div id="div-output">
-    Your location will appear here
-</div>
-
-<div>
-    <a id="a-maps" target="_blank" href="https://www.google.co.uk/maps/">Click here to see you on a map</a>
+    <div id="div-output">
+        Your location will appear here
+    </div>
+    <div>
+        <a id="a-maps" target="_blank" href="https://www.google.co.uk/maps/">Click here to see you on a map</a>
+    </div>
 </div>
 
 </body>
 
 <script type="module">
-    import { calculateGeoCode } from "./js/main.js"
+    import {calculateGeoCode} from "./js/main.js"
 
     const divOutput = document.getElementById('div-output')
+
     function updateOutput(latitude, longitude) {
 
         const mapsLink = document.getElementById('a-maps')
@@ -35,6 +37,7 @@
         divOutput.textContent = 'Retrieving location...'
         calculateGeoCode(updateOutput)
     }
+
     document.getElementById('btn-go').onclick = btnGoOnClick
 </script>
 </html>

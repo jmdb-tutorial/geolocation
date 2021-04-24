@@ -1,18 +1,25 @@
-#btn-go {
-    width: 400px;
-    height: 100px;
-    margin:10px;
+#div-content {
+    width: 100%;
+
 }
 
+#btn-go, #div-output, #a-maps {
+    width:100%;
+
+}
+
+#btn-go {
+    font-size: 10em;
+}
 #div-output {
-    width:400px;
-    height:100px;
-    margin:10px;
+    font-size: 3em;
+    text-align: center;
+    margin-top:2em;
+    margin-bottom:2em;
 }
 
 #a-maps {
-    width:400px;
-    height:100px;
-    margin:10px;
+    font-size: 3em;
     text-align: center;
+    display:block;
 }
