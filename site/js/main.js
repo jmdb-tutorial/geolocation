@@ -16,8 +16,7 @@ function calculateGeoCode() {
     if (!navigator.geolocation) {
         log.error("Browser Does Not Support geolocation")
     } else {
-
-        navigator.geolocation.getCurrentPosition(success, error)
+        navigator.geolocation.getCurrentPosition(success, error , {enableHighAccuracy: true})
     }
 }
 
