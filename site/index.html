@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Test GeoLocation</title>
+
+</head>
+<body>
+
+<button id="btn-go" type="button" name="GO">GO</button>
+
+
+</body>
+
+<script type="module">
+    import { calculateGeoCode} from "./js/main.js"
+    document.getElementById('btn-go').onclick = calculateGeoCode
+</script>
+</html>
